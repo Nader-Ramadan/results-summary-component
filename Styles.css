@@ -55,7 +55,7 @@ main {
     flex-flow: column;
     align-items: center;
     gap: 1em;
-    padding: 2em 4em;
+    padding: 2em 4.4em;
 }
 .yr {
     color: var(--Light-lavender)
