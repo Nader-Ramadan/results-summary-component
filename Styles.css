@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     box-sizing: border-box;
     /* outline: auto; */
     font-family: 'Hanken Grotesk', sans-serif;
@@ -37,17 +36,20 @@ body {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    gap: 2em;
 }
 main {
     background: transparent;
     border-radius: 2em;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     min-height: 29em;
     box-shadow: 1em 1em 1em var(--cbo);
 }
 .l {
     border-radius: 2em;
-    width: 22em;
+    width: 23.5em;
     background: var(--lg1);
     display: flex;
     flex-flow: column;
@@ -88,7 +90,7 @@ main {
     color: var(--Light-lavender);
 }
 .r {
-    width: 22em;
+    width: 23.5em;
     padding: 2em 2em;
     display: flex;
     flex-flow: column;
@@ -155,8 +157,7 @@ button {
 .attribution { 
     color: var(--Dark-gray-blue);
     text-align: center; 
-    position: absolute; 
-    top: 80%;
+    position: relative; 
 }
 .attribution:hover {
     animation-name: bob;
@@ -176,4 +177,7 @@ button {
         box-shadow: 0.5em 0.5em 0.5em var(--Dark-gray-blue);
         padding: 0.5em 1em;
     }
+}
+@media screen and (width < 700) {
+    
 }
